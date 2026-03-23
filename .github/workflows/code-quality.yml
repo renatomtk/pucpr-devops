@@ -1,4 +1,4 @@
-name: CI
+name: Code Quality
 
 on:
   push:
@@ -7,7 +7,7 @@ on:
     branches: [ "main" ]
 
 jobs:
-  test-project:
+  code-quality:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout code
@@ -22,14 +22,14 @@ jobs:
       - name: Install dependencies
         run: npm install
 
-      - name: Run linter
+      - name: Run ESLint
         run: npm run lint
 
-      - name: Run tests
-        run: npm run test
-
-      - name: Build project
+      - name: Build verification
         run: npm run build
 
-      - name: Generate build summary
-        run: echo "✅ CI pipeline completed successfully!"
+      - name: Code Quality Report
+        run: |
+          echo "✅ Code Quality Checks Passed"
+          echo "🔍 ESLint: approved"
+          echo "🏗️  Build: successful"
