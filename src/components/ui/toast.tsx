@@ -108,7 +108,7 @@ const ToastDescription = React.forwardRef<
 ))
 ToastDescription.displayName = ToastPrimitives.Description.displayName
 
-type ToastActionElement = React.ReactElement<any>
+type ToastActionElement = React.ReactElement<Record<string, unknown>>
 
 export {
   type ToastActionElement,
