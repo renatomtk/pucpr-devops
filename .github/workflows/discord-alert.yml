@@ -46,9 +46,11 @@ jobs:
         fi
         echo "event_type=${EVENT_TYPE}" >> $GITHUB_OUTPUT
         echo "branch=${BRANCH}" >> $GITHUB_OUTPUT
-        echo "commit_msg=${COMMIT_MSG}" >> $GITHUB_OUTPUT
         echo "author=${COMMIT_AUTHOR}" >> $GITHUB_OUTPUT
         echo "url=${COMMIT_URL}" >> $GITHUB_OUTPUT
+        echo "commit_msg<<EOF" >> $GITHUB_OUTPUT
+        echo "${COMMIT_MSG}" >> $GITHUB_OUTPUT
+        echo "EOF" >> $GITHUB_OUTPUT
 
     - name: Send Discord notification
       if: always()
