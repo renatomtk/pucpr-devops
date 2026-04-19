@@ -189,28 +189,3 @@ npm install
 # Linux: adicione seu usuário ao grupo docker
 sudo usermod -aG docker $USER
 ```
-
-## 📝 Contribuindo
-
-1. Faça um fork do projeto
-2. Crie uma branch para sua feature (`git checkout -b feature/AmazingFeature`)
-3. Commit suas mudanças (`git commit -m 'Add some AmazingFeature'`)
-4. Push para a branch (`git push origin feature/AmazingFeature`)
-5. Abra um Pull Request
-
-### Padrões de Código
-- Use TypeScript para type safety
-- Siga as regras do ESLint
-- Mantenha cobertura de testes acima de 80%
-- Componentes devem ser reutilizáveis
-
-## 📄 Licença
-
-Este projeto é licenciado sob a Licença MIT - veja o arquivo [LICENSE](LICENSE) para detalhes.
-
-## 📞 Contato
-
-**Renato Hideki Motikawa**
-- Email: renato.hideki@example.com
-- LinkedIn: [linkedin.com/in/renatomtk](https://linkedin.com)
-- GitHub: [@renatomtk](https://github.com/renatomtk)
