@@ -22,7 +22,8 @@ describe("cn Utility Function", () => {
   });
 
   it("should remove falsy values", () => {
-    const result = cn("px-2", false && "py-1", null, "text-sm");
+    const shouldAdd = false;
+    const result = cn("px-2", shouldAdd && "py-1", null, "text-sm");
     expect(result).toContain("px-2");
     expect(result).toContain("text-sm");
     expect(result).not.toContain("py-1");
